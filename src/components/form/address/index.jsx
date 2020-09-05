@@ -4,16 +4,16 @@ import TextField from "@material-ui/core/TextField";
 import { Formik, useFormik } from "formik";
 import { Addressschema } from "../../validation";
 
-export const Addressform = memo(({ submit }) => {
+export const Addressform = memo(({ submit,prevVal }) => {
   return (
     <div className="_card_">
       <h2>Add Address</h2>
       <Formik
-        initialValues={{ area: "", city: "" }}
+        initialValues={prevVal}
         validationSchema={Addressschema}
         onSubmit={(values, actions) => {
           console.log("values",values,"actions",actions)
-          submit(1,{...values})
+          submit(1,{...values,})
         }}
       >
         {(props) => {

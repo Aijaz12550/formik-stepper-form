@@ -25,7 +25,7 @@ export const PaymentForm = ({submit,prevVal,step}) => {
                 error={!!props?.errors?.cardName}
                 id="cardName"
                 name="cardName"
-                placeholder="Abc cardName"
+                placeholder="card Name"
                 type="text"
                 onChange={props.handleChange}
                 value={props.values.cardName}
@@ -35,7 +35,7 @@ export const PaymentForm = ({submit,prevVal,step}) => {
                 error={!!props?.errors?.cardNumber}
                 id="cardNumber"
                 name="cardNumber"
-                placeholder="Karachi"
+                placeholder="421787517657657"
                 type="number"
                 onChange={props.handleChange}
                 value={props.values.cardNumber}

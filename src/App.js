@@ -6,14 +6,12 @@ import Stepper from "./components/stepper";
 function App() {
   let [step, setStep] = useState(0);
   let [values, setValues] = useState({});
-  const submit = useCallback(
+  const submit = 
     (newStep, val) => {
       setStep(newStep);
       setValues({ ...values, ...val });
       return;
-    },
-    [step]
-  );
+    }
   // let ComponentToRender = [Addressform, PaymentForm, CheckoutSuccess][step]
   console.log("vvv", values);
   return (
@@ -21,7 +19,7 @@ function App() {
       <header className="App-header">
         <Stepper step={step} />
 
-        {step === 0 && <Addressform submit={submit} />}
+        {step === 0 && <Addressform submit={submit} prevVal={values} />}
         {step === 1 && <PaymentForm submit={submit} prevVal={values} />}
         {step === 2 && <CheckoutSuccess value={values} submit={submit} />}
       </header>

@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: rgb(7, 6, 6);
 }
 ._card_{
@@ -18,6 +18,8 @@
   display: flex;
   flex-flow: column ;
   padding: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   min-width: 400px;
   border: 1px solid #eee;
   box-shadow: 2px 3px 14px 1px rgb(138, 136, 136);
