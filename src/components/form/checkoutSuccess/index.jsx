@@ -8,7 +8,7 @@ export const CheckoutSuccess = ({ submit, value }) => {
       <p>Area: {value.area}</p>
       <p>City: {value.city} </p>
       <p>Card Name: {value.cardName}</p>
-      <p>City: {value.cardNumber} </p>
+      <p>Card NUMBER: {value.cardNumber} </p>
       <hr />
       <p>Total: $10</p>
       <div>

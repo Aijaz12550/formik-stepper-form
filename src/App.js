@@ -12,16 +12,15 @@ function App() {
       setValues({ ...values, ...val });
       return;
     }
-  // let ComponentToRender = [Addressform, PaymentForm, CheckoutSuccess][step]
   console.log("vvv", values);
   return (
     <div className="App">
       <header className="App-header">
-        <Stepper step={step} />
-
+        <Stepper />
+{/* 
         {step === 0 && <Addressform submit={submit} prevVal={values} />}
         {step === 1 && <PaymentForm submit={submit} prevVal={values} />}
-        {step === 2 && <CheckoutSuccess value={values} submit={submit} />}
+        {step === 2 && <CheckoutSuccess value={values} submit={submit} />} */}
       </header>
     </div>
   );
